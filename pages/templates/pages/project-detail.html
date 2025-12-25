@@ -11,13 +11,22 @@
 
     <section class="section section-light reveal">
       <div class="container project-detail-grid">
-        <div class="gallery">
-          <div class="gallery-main"></div>
-          <div class="gallery-thumbs">
-            <div class="gallery-thumb"></div>
-            <div class="gallery-thumb alt"></div>
-            <div class="gallery-thumb dark"></div>
-          </div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-item--large" data-modal="gallery-modal" data-image="image-alt">
+            <span>1</span>
+          </button>
+          <button class="gallery-item" data-modal="gallery-modal" data-image="image-soft">
+            <span>2</span>
+          </button>
+          <button class="gallery-item" data-modal="gallery-modal" data-image="image-accent">
+            <span>3</span>
+          </button>
+          <button class="gallery-item" data-modal="gallery-modal" data-image="image-bold">
+            <span>4</span>
+          </button>
+          <button class="gallery-item" data-modal="gallery-modal" data-image="image-dark">
+            <span>5</span>
+          </button>
         </div>
         <div class="project-info">
           <div class="meta-grid">
@@ -39,6 +48,13 @@
             <button class="btn btn-primary">Запросить похожий проект</button>
             <button class="btn btn-outline">Скачать PDF</button>
           </div>
+        </div>
+      </div>
+      <div class="modal" id="gallery-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="true"></div>
+        <div class="modal-content">
+          <button class="modal-close" type="button" data-close="true">Закрыть</button>
+          <div class="modal-image"></div>
         </div>
       </div>
     </section>
