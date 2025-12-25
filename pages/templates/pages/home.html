@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grace — рекламное агентство полного цикла</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Grace</div>
+        <div class="nav-links">
+          <a href="#services">Услуги</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#process">Процесс</a>
+          <a href="/projects/">Проекты</a>
+          <a href="/contacts/">Контакты</a>
+        </div>
+        <button class="btn btn-outline">+7 (900) 123-45-67</button>
+      </nav>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <span class="badge">Signage / 3D letters / Facade solutions</span>
+          <h1 class="hero-title">Сильный фасад и вывеска, которые говорят за бренд</h1>
+          <p class="hero-subtitle">Проектируем, производим и монтируем вывески, объёмные буквы, стелы и печатные решения. Всё — с премиальным контролем качества.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Получить расчёт</button>
+            <button class="btn btn-outline">Скачать презентацию</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="abstract-card glow">
+            <svg viewBox="0 0 320 320" aria-hidden="true">
+              <defs>
+                <radialGradient id="ring" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#53C0A9" stop-opacity="0.8" />
+                  <stop offset="100%" stop-color="#062B52" stop-opacity="0.1" />
+                </radialGradient>
+                <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#53C0A9" />
+                  <stop offset="100%" stop-color="#062B52" />
+                </linearGradient>
+              </defs>
+              <circle cx="160" cy="160" r="120" fill="none" stroke="url(#ring)" stroke-width="8" />
+              <circle cx="160" cy="160" r="70" fill="none" stroke="#53C0A9" stroke-opacity="0.4" stroke-width="3" />
+              <path d="M50 190 C120 120 200 220 270 130" fill="none" stroke="url(#beam)" stroke-width="6" stroke-linecap="round" />
+              <rect x="80" y="60" width="140" height="70" rx="20" fill="#062B52" opacity="0.5" />
+              <circle cx="240" cy="90" r="18" fill="#53C0A9" opacity="0.7" />
+            </svg>
+          </div>
+          <div class="floating-card">
+            <div class="floating-title">Glow-эффект</div>
+            <p>Мягкая засветка и акцентные градиенты для выразительной навигации.</p>
+          </div>
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section section-dark reveal">
+      <div class="container stats-grid">
+        <div class="stat">
+          <span class="stat-value">12 лет</span>
+          <span class="stat-label">опыта в signage</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">480+</span>
+          <span class="stat-label">реализованных проектов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">14 дней</span>
+          <span class="stat-label">средний срок запуска</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">24/7</span>
+          <span class="stat-label">поддержка и сервис</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-dark reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Услуги</span>
+          <h2>Производство и дизайн, где каждая линия подчинена бренду</h2>
+          <p>Собственная мастерская, инженеры и проектная команда — для стабильного качества и сроков.</p>
+        </div>
+        <div class="grid services-grid">
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 10h8v4H8z" fill="currentColor" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3>Световые вывески</h3>
+            <p>Ровная засветка, мощные модули и чистая сборка.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 12h18" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 5h12v14H6z" fill="currentColor" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3>3D буквы</h3>
+            <p>Алюминий, акрил, контражур, торцевое свечение.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 20l8-16 8 16" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M9 14h6" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3>Фасадные решения</h3>
+            <p>Архитектурная подсветка, композит, монтажные системы.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4h10v16H7z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="9" r="2.5" fill="currentColor" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3>Стелы и пилоны</h3>
+            <p>Инженерия под ветровые нагрузки и премиальный вид.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 8h16v8H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 12h16" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3>Печать и оформление</h3>
+            <p>Широкоформатная печать, навигация, POS.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 6h14v12H5z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 9h8v6H8z" fill="currentColor" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3>Brand support</h3>
+            <p>Сервис, обновления, сезонные кампании.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="section section-light reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-dark">Кейсы</span>
+          <h2>Избранные проекты с фокусом на бренд-эффект</h2>
+          <p>Горизонтальный список кейсов с визуальным акцентом и быстрыми фильтрами.</p>
+        </div>
+        <div class="filter-row">
+          <button class="chip active">Все</button>
+          <button class="chip">Ритейл</button>
+          <button class="chip">HoReCa</button>
+          <button class="chip">Девелопмент</button>
+          <button class="chip">Логистика</button>
+        </div>
+        <div class="case-slider">
+          <div class="case-card">
+            <div class="case-media"></div>
+            <div class="case-body">
+              <span class="case-tag">HoReCa</span>
+              <h3>Urban Coffee</h3>
+              <p>Неон, меню-борды, интерьерный glow.</p>
+            </div>
+          </div>
+          <div class="case-card">
+            <div class="case-media media-alt"></div>
+            <div class="case-body">
+              <span class="case-tag">Ритейл</span>
+              <h3>Everline Hotel</h3>
+              <p>Фасадные буквы и архитектурная подсветка.</p>
+            </div>
+          </div>
+          <div class="case-card">
+            <div class="case-media media-dark"></div>
+            <div class="case-body">
+              <span class="case-tag">Логистика</span>
+              <h3>Westline</h3>
+              <p>Стела с высокой читаемостью.</p>
+            </div>
+          </div>
+          <div class="case-card">
+            <div class="case-media media-glow"></div>
+            <div class="case-body">
+              <span class="case-tag">Девелопмент</span>
+              <h3>Skyline Towers</h3>
+              <p>Глубокий свет и навигация.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section-dark reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Процесс</span>
+          <h2>Чёткий timeline работ — без сюрпризов</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-step">
+            <span class="step-number">01</span>
+            <h3>Брифинг</h3>
+            <p>Собираем данные, замеры, KPI и ограничения объекта.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-number">02</span>
+            <h3>Дизайн</h3>
+            <p>Визуализация, подбор материалов, согласование.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-number">03</span>
+            <h3>Производство</h3>
+            <p>Сборка, тестирование света и контроль качества.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-number">04</span>
+            <h3>Монтаж</h3>
+            <p>Доставка, установка, гарантийный сервис.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-dark">Клиенты</span>
+          <h2>Партнеры, доверяющие Grace</h2>
+        </div>
+        <div class="logo-grid">
+          <span>Nordbank</span>
+          <span>Helio</span>
+          <span>Workline</span>
+          <span>MetroHub</span>
+          <span>Mono</span>
+          <span>Vista</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark reveal">
+      <div class="container">
+        <div class="cta-card full">
+          <div>
+            <span class="badge">Запуск за 14 дней</span>
+            <h2>Готовы усилить фасад и узнаваемость?</h2>
+            <p>Подготовим концепцию и смету за 24 часа.</p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-primary">Запросить смету</button>
+            <button class="btn btn-outline">Получить консультацию</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light reveal">
+      <div class="container contact-mini">
+        <div>
+          <span class="badge badge-dark">Контакты</span>
+          <h2>Свяжитесь с нами</h2>
+        </div>
+        <div class="contact-mini-list">
+          <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+          <a href="https://wa.me/79001234567">WhatsApp</a>
+          <a href="mailto:hello@grace-agency.ru">hello@grace-agency.ru</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Grace</div>
+          <p>Рекламное агентство полного цикла: вывески, 3D буквы, фасады, стелы и печать.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы</h4>
+          <a href="/projects/">Проекты</a>
+          <a href="/contacts/">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <span>Москва, ул. Мастерская 12</span>
+          <span>hello@grace-agency.ru</span>
+          <span>+7 (900) 123-45-67</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
