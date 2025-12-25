@@ -24,31 +24,3 @@ if (navToggle && navLinks) {
     navLinks.classList.toggle('is-open');
   });
 }
-
-const modalTriggers = document.querySelectorAll('[data-modal]');
-modalTriggers.forEach((trigger) => {
-  const modalId = trigger.getAttribute('data-modal');
-  const modal = document.getElementById(modalId);
-  const modalImage = modal ? modal.querySelector('.modal-image') : null;
-
-  if (!modal || !modalImage) return;
-
-  trigger.addEventListener('click', () => {
-    const imageClass = trigger.getAttribute('data-image');
-    modalImage.className = 'modal-image';
-    if (imageClass) {
-      modalImage.classList.add(imageClass);
-    }
-    modal.classList.add('is-open');
-    modal.setAttribute('aria-hidden', 'false');
-  });
-});
-
-document.querySelectorAll('[data-close]').forEach((closeButton) => {
-  closeButton.addEventListener('click', () => {
-    const modal = closeButton.closest('.modal');
-    if (!modal) return;
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden', 'true');
-  });
-});
