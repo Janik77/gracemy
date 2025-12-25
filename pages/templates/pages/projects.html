@@ -1,0 +1,80 @@
+{% extends "base/base.html" %}
+{% block title %}Grace — проекты{% endblock %}
+{% block content %}
+  <section class="header">
+    <div class="container header-content">
+      <span class="badge">Проекты</span>
+      <h1>Каталог проектов</h1>
+      <p>Фильтруйте по категориям и типу конструкций.</p>
+    </div>
+  </section>
+
+    <section class="section section-light reveal">
+      <div class="container">
+        <div class="filter-row">
+          <button class="chip active">Все</button>
+          <button class="chip">Вывески</button>
+          <button class="chip">3D буквы</button>
+          <button class="chip">Стелы</button>
+          <button class="chip">Фасады</button>
+          <button class="chip">Печать</button>
+        </div>
+        <div class="grid projects-grid">
+          <a class="project-card premium" href="/projects/detail/">
+            <div class="project-cover image-alt">
+              <span class="project-badge">HoReCa</span>
+            </div>
+            <div class="project-info-row">
+              <h3>Everline Hotel</h3>
+              <span>Москва · 2024</span>
+            </div>
+          </a>
+          <a class="project-card premium" href="/projects/detail/">
+            <div class="project-cover image-soft">
+              <span class="project-badge">Ритейл</span>
+            </div>
+            <div class="project-info-row">
+              <h3>Urban Coffee</h3>
+              <span>Сочи · 2023</span>
+            </div>
+          </a>
+          <a class="project-card premium" href="/projects/detail/">
+            <div class="project-cover image-accent">
+              <span class="project-badge">Логистика</span>
+            </div>
+            <div class="project-info-row">
+              <h3>Westline Logistics</h3>
+              <span>Казань · 2024</span>
+            </div>
+          </a>
+          <a class="project-card premium" href="/projects/detail/">
+            <div class="project-cover image-bold">
+              <span class="project-badge">Девелопмент</span>
+            </div>
+            <div class="project-info-row">
+              <h3>Skyline Towers</h3>
+              <span>Екатеринбург · 2022</span>
+            </div>
+          </a>
+          <a class="project-card premium" href="/projects/detail/">
+            <div class="project-cover image-dark">
+              <span class="project-badge">Ритейл</span>
+            </div>
+            <div class="project-info-row">
+              <h3>Nova Retail</h3>
+              <span>Новосибирск · 2024</span>
+            </div>
+          </a>
+          <a class="project-card premium" href="/projects/detail/">
+            <div class="project-cover image-alt">
+              <span class="project-badge">Медицина</span>
+            </div>
+            <div class="project-info-row">
+              <h3>Helio Clinic</h3>
+              <span>Санкт-Петербург · 2023</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

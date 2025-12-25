@@ -1,0 +1,47 @@
+{% extends "base/base.html" %}
+{% block title %}Grace — контакты{% endblock %}
+{% block content %}
+  <section class="header">
+    <div class="container header-content">
+      <span class="badge">Контакты</span>
+      <h1>Свяжитесь с Grace</h1>
+      <p>Ответим в течение 30 минут и подготовим предложение.</p>
+    </div>
+  </section>
+
+    <section class="section section-light reveal">
+      <div class="container contact-grid">
+        <form class="contact-form">
+          <h2>Запросить расчёт</h2>
+          <label>
+            Имя
+            <input type="text" placeholder="Ваше имя" />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" placeholder="+7 (___) ___-__-__" />
+          </label>
+          <label>
+            Сообщение
+            <textarea rows="4" placeholder="Опишите задачу"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+        </form>
+        <div class="contact-info">
+          <div class="map-placeholder">
+            <span>Карта</span>
+          </div>
+          <div class="whatsapp-card">
+            <h3>WhatsApp</h3>
+            <p>Оперативные ответы и быстрый бриф.</p>
+            <a class="btn btn-outline-dark" href="https://wa.me/79001234567">Написать</a>
+          </div>
+          <div class="contact-rows">
+            <span>hello@grace-agency.ru</span>
+            <span>+7 (900) 123-45-67</span>
+            <span>Москва, ул. Мастерская 12</span>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
