@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grace — проект</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Grace</div>
+        <div class="nav-links">
+          <a href="/">Главная</a>
+          <a href="/projects/">Проекты</a>
+          <a href="/contacts/">Контакты</a>
+        </div>
+        <button class="btn btn-outline">+7 (900) 123-45-67</button>
+      </nav>
+      <div class="container header-content">
+        <span class="badge">Кейс</span>
+        <h1>Everline Hotel</h1>
+        <p>Фасадная группа и объёмные буквы для премиального отеля.</p>
+      </div>
+    </header>
+
+    <section class="section section-light reveal">
+      <div class="container project-detail-grid">
+        <div class="gallery">
+          <div class="gallery-main"></div>
+          <div class="gallery-thumbs">
+            <div class="gallery-thumb"></div>
+            <div class="gallery-thumb alt"></div>
+            <div class="gallery-thumb dark"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="meta-grid">
+            <div>
+              <span class="meta-label">Город</span>
+              <strong>Москва</strong>
+            </div>
+            <div>
+              <span class="meta-label">Клиент</span>
+              <strong>Everline Hotels</strong>
+            </div>
+            <div>
+              <span class="meta-label">Год</span>
+              <strong>2024</strong>
+            </div>
+          </div>
+          <p>Проект включал разработку фасадной группы, световых коробов и объёмных букв. Основной задачей было создать премиальный образ, сохранив читаемость с трёх ракурсов и подчёркнув архитектуру здания.</p>
+          <div class="cta-actions">
+            <button class="btn btn-primary">Запросить похожий проект</button>
+            <button class="btn btn-outline">Скачать PDF</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

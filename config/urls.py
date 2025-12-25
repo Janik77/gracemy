@@ -21,5 +21,8 @@ from pages import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('projects/', views.projects, name='projects'),
+    path('projects/detail/', views.project_detail, name='project_detail'),
+    path('contacts/', views.contacts, name='contacts'),
     path('admin/', admin.site.urls),
 ]
