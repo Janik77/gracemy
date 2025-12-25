@@ -1,71 +1,48 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grace — рекламное агентство полного цикла</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
-  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-  <div class="page">
-    <header class="hero">
-      <nav class="nav">
-        <div class="logo">Grace</div>
-        <div class="nav-links">
-          <a href="#services">Услуги</a>
-          <a href="#cases">Кейсы</a>
-          <a href="#process">Процесс</a>
-          <a href="/projects/">Проекты</a>
-          <a href="/contacts/">Контакты</a>
-        </div>
-        <button class="btn btn-outline">+7 (900) 123-45-67</button>
-      </nav>
-
-      <div class="hero-content container">
-        <div class="hero-text">
-          <span class="badge">Signage / 3D letters / Facade solutions</span>
-          <h1 class="hero-title">Фасадные решения для компаний, которые играют в высшей лиге</h1>
-          <span class="visually-hidden">Вариант 2: Вывески и 3D конструкции, усиливающие узнаваемость на федеральном уровне</span>
-          <p class="hero-subtitle">Работаем с крупными сетями и девелоперами: от инженерии вывесок до финального монтажа. Гарантируем точные сроки и чистый результат.</p>
-          <span class="visually-hidden">Вариант 2: Создаём фасады, стелы и световые группы с контролем каждого этапа и прозрачной сметой.</span>
-          <div class="hero-actions">
-            <button class="btn btn-primary">Получить расчёт</button>
-            <button class="btn btn-outline">Скачать презентацию</button>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="abstract-card glow">
-            <svg viewBox="0 0 320 320" aria-hidden="true">
-              <defs>
-                <radialGradient id="ring" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#53C0A9" stop-opacity="0.8" />
-                  <stop offset="100%" stop-color="#062B52" stop-opacity="0.1" />
-                </radialGradient>
-                <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#53C0A9" />
-                  <stop offset="100%" stop-color="#062B52" />
-                </linearGradient>
-              </defs>
-              <circle cx="160" cy="160" r="120" fill="none" stroke="url(#ring)" stroke-width="8" />
-              <circle cx="160" cy="160" r="70" fill="none" stroke="#53C0A9" stroke-opacity="0.4" stroke-width="3" />
-              <path d="M50 190 C120 120 200 220 270 130" fill="none" stroke="url(#beam)" stroke-width="6" stroke-linecap="round" />
-              <rect x="80" y="60" width="140" height="70" rx="20" fill="#062B52" opacity="0.5" />
-              <circle cx="240" cy="90" r="18" fill="#53C0A9" opacity="0.7" />
-            </svg>
-          </div>
-          <div class="floating-card">
-            <div class="floating-title">Glow-эффект</div>
-            <p>Мягкая засветка и акцентные градиенты для выразительной навигации.</p>
-          </div>
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
+{% extends "base/base.html" %}
+{% block title %}Grace — рекламное агентство полного цикла{% endblock %}
+{% block content %}
+  <header class="hero">
+    <div class="hero-content container">
+      <div class="hero-text">
+        <span class="badge">Signage / 3D letters / Facade solutions</span>
+        <h1 class="hero-title">Фасадные решения для компаний, которые играют в высшей лиге</h1>
+        <span class="visually-hidden">Вариант 2: Вывески и 3D конструкции, усиливающие узнаваемость на федеральном уровне</span>
+        <p class="hero-subtitle">Работаем с крупными сетями и девелоперами: от инженерии вывесок до финального монтажа. Гарантируем точные сроки и чистый результат.</p>
+        <span class="visually-hidden">Вариант 2: Создаём фасады, стелы и световые группы с контролем каждого этапа и прозрачной сметой.</span>
+        <div class="hero-actions">
+          <button class="btn btn-primary">Получить расчёт</button>
+          <button class="btn btn-outline">Скачать презентацию</button>
         </div>
       </div>
-    </header>
+      <div class="hero-visual">
+        <div class="abstract-card glow">
+          <svg viewBox="0 0 320 320" aria-hidden="true">
+            <defs>
+              <radialGradient id="ring" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#53C0A9" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#062B52" stop-opacity="0.1" />
+              </radialGradient>
+              <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#53C0A9" />
+                <stop offset="100%" stop-color="#062B52" />
+              </linearGradient>
+            </defs>
+            <circle cx="160" cy="160" r="120" fill="none" stroke="url(#ring)" stroke-width="8" />
+            <circle cx="160" cy="160" r="70" fill="none" stroke="#53C0A9" stroke-opacity="0.4" stroke-width="3" />
+            <path d="M50 190 C120 120 200 220 270 130" fill="none" stroke="url(#beam)" stroke-width="6" stroke-linecap="round" />
+            <rect x="80" y="60" width="140" height="70" rx="20" fill="#062B52" opacity="0.5" />
+            <circle cx="240" cy="90" r="18" fill="#53C0A9" opacity="0.7" />
+          </svg>
+        </div>
+        <div class="floating-card">
+          <div class="floating-title">Glow-эффект</div>
+          <p>Мягкая засветка и акцентные градиенты для выразительной навигации.</p>
+        </div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+    </div>
+  </header>
 
     <section class="section section-dark reveal">
       <div class="container stats-grid">
@@ -322,27 +299,4 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div>
-          <div class="logo">Grace</div>
-          <p>Рекламное агентство полного цикла: вывески, 3D буквы, фасады, стелы и печать.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Разделы</h4>
-          <a href="/projects/">Проекты</a>
-          <a href="/contacts/">Контакты</a>
-        </div>
-        <div class="footer-col">
-          <h4>Контакты</h4>
-          <span>Москва, ул. Мастерская 12</span>
-          <span>hello@grace-agency.ru</span>
-          <span>+7 (900) 123-45-67</span>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script src="{% static 'js/main.js' %}"></script>
-</body>
-</html>
+{% endblock %}

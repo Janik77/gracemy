@@ -1,33 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grace — проект</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
-  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-  <div class="page">
-    <header class="header">
-      <nav class="nav">
-        <div class="logo">Grace</div>
-        <div class="nav-links">
-          <a href="/">Главная</a>
-          <a href="/projects/">Проекты</a>
-          <a href="/contacts/">Контакты</a>
-        </div>
-        <button class="btn btn-outline">+7 (900) 123-45-67</button>
-      </nav>
-      <div class="container header-content">
-        <span class="badge">Кейс</span>
-        <h1>Everline Hotel</h1>
-        <p>Фасадная группа и объёмные буквы для премиального отеля.</p>
-      </div>
-    </header>
+{% extends "base/base.html" %}
+{% block title %}Grace — проект{% endblock %}
+{% block content %}
+  <section class="header">
+    <div class="container header-content">
+      <span class="badge">Кейс</span>
+      <h1>Everline Hotel</h1>
+      <p>Фасадная группа и объёмные буквы для премиального отеля.</p>
+    </div>
+  </section>
 
     <section class="section section-light reveal">
       <div class="container project-detail-grid">
@@ -62,8 +42,4 @@
         </div>
       </div>
     </section>
-  </div>
-
-  <script src="{% static 'js/main.js' %}"></script>
-</body>
-</html>
+{% endblock %}
