@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grace — проекты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Grace</div>
+        <div class="nav-links">
+          <a href="/">Главная</a>
+          <a href="/projects/">Проекты</a>
+          <a href="/contacts/">Контакты</a>
+        </div>
+        <button class="btn btn-outline">+7 (900) 123-45-67</button>
+      </nav>
+      <div class="container header-content">
+        <span class="badge">Проекты</span>
+        <h1>Каталог проектов</h1>
+        <p>Фильтруйте по категориям и типу конструкций.</p>
+      </div>
+    </header>
+
+    <section class="section section-light reveal">
+      <div class="container">
+        <div class="filter-row">
+          <button class="chip active">Все</button>
+          <button class="chip">Вывески</button>
+          <button class="chip">3D буквы</button>
+          <button class="chip">Стелы</button>
+          <button class="chip">Фасады</button>
+          <button class="chip">Печать</button>
+        </div>
+        <div class="grid projects-grid">
+          <a class="project-card" href="/projects/detail/">
+            <div class="project-image"></div>
+            <div class="project-body">
+              <h3>Everline Hotel</h3>
+              <p>Фасадная группа и объёмные буквы.</p>
+            </div>
+          </a>
+          <a class="project-card" href="/projects/detail/">
+            <div class="project-image image-alt"></div>
+            <div class="project-body">
+              <h3>Urban Coffee</h3>
+              <p>Неон, навигация и интерьерные решения.</p>
+            </div>
+          </a>
+          <a class="project-card" href="/projects/detail/">
+            <div class="project-image image-accent"></div>
+            <div class="project-body">
+              <h3>Westline Logistics</h3>
+              <p>Стела с яркой ночной подсветкой.</p>
+            </div>
+          </a>
+          <a class="project-card" href="/projects/detail/">
+            <div class="project-image image-soft"></div>
+            <div class="project-body">
+              <h3>Skyline Towers</h3>
+              <p>Архитектурная навигация фасада.</p>
+            </div>
+          </a>
+          <a class="project-card" href="/projects/detail/">
+            <div class="project-image image-bold"></div>
+            <div class="project-body">
+              <h3>Nova Retail</h3>
+              <p>Световые короба и печать.</p>
+            </div>
+          </a>
+          <a class="project-card" href="/projects/detail/">
+            <div class="project-image image-dark"></div>
+            <div class="project-body">
+              <h3>Helio Clinic</h3>
+              <p>3D буквы с контражуром.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

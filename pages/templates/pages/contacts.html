@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grace — контакты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Grace</div>
+        <div class="nav-links">
+          <a href="/">Главная</a>
+          <a href="/projects/">Проекты</a>
+          <a href="/contacts/">Контакты</a>
+        </div>
+        <button class="btn btn-outline">+7 (900) 123-45-67</button>
+      </nav>
+      <div class="container header-content">
+        <span class="badge">Контакты</span>
+        <h1>Свяжитесь с Grace</h1>
+        <p>Ответим в течение 30 минут и подготовим предложение.</p>
+      </div>
+    </header>
+
+    <section class="section section-light reveal">
+      <div class="container contact-grid">
+        <form class="contact-form">
+          <h2>Запросить расчёт</h2>
+          <label>
+            Имя
+            <input type="text" placeholder="Ваше имя" />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" placeholder="+7 (___) ___-__-__" />
+          </label>
+          <label>
+            Сообщение
+            <textarea rows="4" placeholder="Опишите задачу"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+        </form>
+        <div class="contact-info">
+          <div class="map-placeholder">
+            <span>Карта</span>
+          </div>
+          <div class="whatsapp-card">
+            <h3>WhatsApp</h3>
+            <p>Оперативные ответы и быстрый бриф.</p>
+            <a class="btn btn-outline-dark" href="https://wa.me/79001234567">Написать</a>
+          </div>
+          <div class="contact-rows">
+            <span>hello@grace-agency.ru</span>
+            <span>+7 (900) 123-45-67</span>
+            <span>Москва, ул. Мастерская 12</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
