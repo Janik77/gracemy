@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Grace — рекламное агентство полного цикла{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'src/css/style.css' %}" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Grace</div>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="/">Главная</a>
+          <a href="/projects/">Проекты</a>
+          <a href="/contacts/">Контакты</a>
+        </div>
+        <button class="btn btn-outline">+7 (900) 123-45-67</button>
+      </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Grace</div>
+          <p>Рекламное агентство полного цикла: вывески, 3D буквы, фасады, стелы и печать.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы</h4>
+          <a href="/projects/">Проекты</a>
+          <a href="/contacts/">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <span>Москва, ул. Мастерская 12</span>
+          <span>hello@grace-agency.ru</span>
+          <span>+7 (900) 123-45-67</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'src/js/main.js' %}"></script>
+</body>
+</html>
