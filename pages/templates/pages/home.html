@@ -1,237 +1,191 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grace — рекламное агентство | вывески, 3D буквы, фасады</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
-  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-  <div class="page">
-    <header class="hero">
-      <nav class="nav">
-        <div class="logo">Grace</div>
-        <div class="nav-links">
-          <a href="#services">Услуги</a>
-          <a href="#projects">Проекты</a>
-          <a href="#process">Процесс</a>
-          <a href="#faq">FAQ</a>
-        </div>
-        <button class="btn btn-outline">+7 (900) 123-45-67</button>
-      </nav>
+{% extends 'base/base.html' %}
 
-      <div class="hero-content container">
-        <div class="hero-text">
-          <span class="badge">Signage / 3D letters / Facade solutions</span>
-          <h1 class="hero-title">Рекламные фасады, которые работают на ваш бренд</h1>
-          <p class="hero-subtitle">Проектируем, производим и монтируем вывески, 3D буквы, стелы и печатные материалы. Делаем визуальную коммуникацию премиальной и безупречно исполненной.</p>
-          <div class="hero-actions">
-            <button class="btn btn-primary">Получить расчёт</button>
-            <button class="btn btn-outline">Посмотреть кейсы</button>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-value">12 лет</span>
-              <span class="stat-label">в индустрии</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">480+</span>
-              <span class="stat-label">реализованных проектов</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">24/7</span>
-              <span class="stat-label">сервис и поддержка</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="visual-card glow">
-            <div class="visual-header">
-              <span>Grace LAB</span>
-              <span class="dot"></span>
-            </div>
-            <div class="visual-body">
-              <div class="visual-line"></div>
-              <div class="visual-line"></div>
-              <div class="visual-line short"></div>
-            </div>
-            <div class="visual-foot">
-              <span>Новый фасад</span>
-              <strong>+35% видимость</strong>
-            </div>
-          </div>
-          <div class="floating-card">
-            <div class="floating-title">Световые короба</div>
-            <p>Глубокий glow, ровная засветка, премиальные материалы.</p>
-          </div>
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-        </div>
-      </div>
-    </header>
+{% block title %}Grace — рекламное агентство | вывески, 3D буквы, фасады{% endblock %}
 
-    <section id="services" class="section section-dark reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="badge">Что мы делаем</span>
-          <h2>Полный цикл визуальной коммуникации для бизнеса</h2>
-          <p>От концепции до установки. Собственная производственная база и команда инженеров позволяют держать качество и сроки.</p>
+{% block content %}
+  <section class="hero">
+    <div class="hero-content container">
+      <div class="hero-text">
+        <span class="badge">Signage / 3D letters / Facade solutions</span>
+        <h1 class="hero-title">Рекламные фасады, которые работают на ваш бренд</h1>
+        <p class="hero-subtitle">Проектируем, производим и монтируем вывески, 3D буквы, стелы и печатные материалы. Делаем визуальную коммуникацию премиальной и безупречно исполненной.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary">Получить расчёт</button>
+          <button class="btn btn-outline">Посмотреть кейсы</button>
         </div>
-        <div class="grid services-grid">
-          <div class="card">
-            <h3>Вывески и 3D буквы</h3>
-            <p>Лицевые панели, контражур, торцевое свечение, композит и алюминий.</p>
-            <span class="card-link">Подробнее →</span>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">12 лет</span>
+            <span class="stat-label">в индустрии</span>
           </div>
-          <div class="card">
-            <h3>Фасадные решения</h3>
-            <p>Архитектурная подсветка, облицовка, системы крепления и инженерия.</p>
-            <span class="card-link">Подробнее →</span>
+          <div class="stat">
+            <span class="stat-value">480+</span>
+            <span class="stat-label">реализованных проектов</span>
           </div>
-          <div class="card">
-            <h3>Стелы и пилоны</h3>
-            <p>Конструктивы любой высоты с учетом ветровых нагрузок и норм.</p>
-            <span class="card-link">Подробнее →</span>
-          </div>
-          <div class="card">
-            <h3>Печать и брендинг</h3>
-            <p>Широкоформатная печать, интерьерные решения, навигация и POS.</p>
-            <span class="card-link">Подробнее →</span>
+          <div class="stat">
+            <span class="stat-value">24/7</span>
+            <span class="stat-label">сервис и поддержка</span>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="projects" class="section section-light reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="badge badge-dark">Кейсы</span>
-          <h2>Готовые проекты с фокусом на бренд и архитектуру</h2>
-          <p>Каждое решение — результат дизайн-анализа локации, архитектурных ограничений и бизнес-целей клиента.</p>
+      <div class="hero-visual">
+        <div class="visual-card glow">
+          <div class="visual-header">
+            <span>Grace LAB</span>
+            <span class="dot"></span>
+          </div>
+          <div class="visual-body">
+            <div class="visual-line"></div>
+            <div class="visual-line"></div>
+            <div class="visual-line short"></div>
+          </div>
+          <div class="visual-foot">
+            <span>Новый фасад</span>
+            <strong>+35% видимость</strong>
+          </div>
         </div>
-        <div class="grid projects-grid">
-          <div class="project-card">
-            <div class="project-image"></div>
-            <div class="project-body">
-              <h3>Everline Hotel</h3>
-              <p>Комплексная фасадная группа с объёмными буквами и подсветкой.</p>
-            </div>
+        <div class="floating-card">
+          <div class="floating-title">Световые короба</div>
+          <p>Глубокий glow, ровная засветка, премиальные материалы.</p>
+        </div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section section-dark reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Что мы делаем</span>
+        <h2>Полный цикл визуальной коммуникации для бизнеса</h2>
+        <p>От концепции до установки. Собственная производственная база и команда инженеров позволяют держать качество и сроки.</p>
+      </div>
+      <div class="grid services-grid">
+        <div class="card">
+          <h3>Вывески и 3D буквы</h3>
+          <p>Лицевые панели, контражур, торцевое свечение, композит и алюминий.</p>
+          <span class="card-link">Подробнее →</span>
+        </div>
+        <div class="card">
+          <h3>Фасадные решения</h3>
+          <p>Архитектурная подсветка, облицовка, системы крепления и инженерия.</p>
+          <span class="card-link">Подробнее →</span>
+        </div>
+        <div class="card">
+          <h3>Стелы и пилоны</h3>
+          <p>Конструктивы любой высоты с учетом ветровых нагрузок и норм.</p>
+          <span class="card-link">Подробнее →</span>
+        </div>
+        <div class="card">
+          <h3>Печать и брендинг</h3>
+          <p>Широкоформатная печать, интерьерные решения, навигация и POS.</p>
+          <span class="card-link">Подробнее →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-light reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-dark">Кейсы</span>
+        <h2>Готовые проекты с фокусом на бренд и архитектуру</h2>
+        <p>Каждое решение — результат дизайн-анализа локации, архитектурных ограничений и бизнес-целей клиента.</p>
+      </div>
+      <div class="grid projects-grid">
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-body">
+            <h3>Everline Hotel</h3>
+            <p>Комплексная фасадная группа с объёмными буквами и подсветкой.</p>
           </div>
-          <div class="project-card">
-            <div class="project-image image-alt"></div>
-            <div class="project-body">
-              <h3>Urban Coffee</h3>
-              <p>Неоновые акценты, меню-борды и интерьерная навигация.</p>
-            </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image image-alt"></div>
+          <div class="project-body">
+            <h3>Urban Coffee</h3>
+            <p>Неоновые акценты, меню-борды и интерьерная навигация.</p>
           </div>
-          <div class="project-card">
-            <div class="project-image image-accent"></div>
-            <div class="project-body">
-              <h3>Westline Logistics</h3>
-              <p>Стела с высокой видимостью и архитектурной подсветкой.</p>
-            </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image image-accent"></div>
+          <div class="project-body">
+            <h3>Westline Logistics</h3>
+            <p>Стела с высокой видимостью и архитектурной подсветкой.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="process" class="section section-dark reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="badge">Как мы работаем</span>
-          <h2>Система, где каждая деталь продумана</h2>
+  <section id="process" class="section section-dark reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Как мы работаем</span>
+        <h2>Система, где каждая деталь продумана</h2>
+      </div>
+      <div class="grid process-grid">
+        <div class="process-step">
+          <span class="step-number">01</span>
+          <h3>Брифинг и аудит</h3>
+          <p>Погружаемся в бизнес и анализируем площадку, трафик и архитектуру.</p>
         </div>
-        <div class="grid process-grid">
-          <div class="process-step">
-            <span class="step-number">01</span>
-            <h3>Брифинг и аудит</h3>
-            <p>Погружаемся в бизнес и анализируем площадку, трафик и архитектуру.</p>
-          </div>
-          <div class="process-step">
-            <span class="step-number">02</span>
-            <h3>Дизайн и визуализация</h3>
-            <p>Создаём концепт, 3D-визуализацию и согласовываем материалы.</p>
-          </div>
-          <div class="process-step">
-            <span class="step-number">03</span>
-            <h3>Производство</h3>
-            <p>Собственный цех, контроль качества, тестирование света.</p>
-          </div>
-          <div class="process-step">
-            <span class="step-number">04</span>
-            <h3>Монтаж и сервис</h3>
-            <p>Доставляем, монтируем, сопровождаем в эксплуатации.</p>
-          </div>
+        <div class="process-step">
+          <span class="step-number">02</span>
+          <h3>Дизайн и визуализация</h3>
+          <p>Создаём концепт, 3D-визуализацию и согласовываем материалы.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">03</span>
+          <h3>Производство</h3>
+          <p>Собственный цех, контроль качества, тестирование света.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">04</span>
+          <h3>Монтаж и сервис</h3>
+          <p>Доставляем, монтируем, сопровождаем в эксплуатации.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section-light reveal">
-      <div class="container">
-        <div class="cta-card">
-          <div>
-            <span class="badge badge-dark">Запуск за 14 дней</span>
-            <h2>Нужен заметный фасад? Сделаем проект под ключ.</h2>
-            <p>Соберём концепт, рассчитаем стоимость и сроки за 24 часа.</p>
-          </div>
-          <div class="cta-actions">
-            <button class="btn btn-primary">Запросить смету</button>
-            <button class="btn btn-outline-dark">Скачать презентацию</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="section section-dark reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="badge">FAQ</span>
-          <h2>Частые вопросы</h2>
-        </div>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h3>Сколько занимает производство?</h3>
-            <p>Средний цикл — 10-20 рабочих дней в зависимости от сложности, материалов и согласований.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Вы берёте проекты по России?</h3>
-            <p>Да, работаем с партнёрами в регионах и организуем монтаж по всей стране.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Есть ли гарантия?</h3>
-            <p>Гарантия от 12 до 36 месяцев на конструктив и световые модули.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer-grid">
+  <section class="section section-light reveal">
+    <div class="container">
+      <div class="cta-card">
         <div>
-          <div class="logo">Grace</div>
-          <p>Рекламное агентство полного цикла: вывески, 3D буквы, фасады, стелы и печать.</p>
+          <span class="badge badge-dark">Запуск за 14 дней</span>
+          <h2>Нужен заметный фасад? Сделаем проект под ключ.</h2>
+          <p>Соберём концепт, рассчитаем стоимость и сроки за 24 часа.</p>
         </div>
-        <div class="footer-col">
-          <h4>Услуги</h4>
-          <a href="#services">Вывески</a>
-          <a href="#services">Фасады</a>
-          <a href="#services">Стелы</a>
-          <a href="#services">Печать</a>
-        </div>
-        <div class="footer-col">
-          <h4>Контакты</h4>
-          <span>hello@grace-agency.ru</span>
-          <span>+7 (900) 123-45-67</span>
-          <span>Москва, ул. Мастерская 12</span>
+        <div class="cta-actions">
+          <button class="btn btn-primary">Запросить смету</button>
+          <button class="btn btn-outline-dark">Скачать презентацию</button>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </section>
 
-  <script src="{% static 'js/main.js' %}"></script>
-</body>
-</html>
+  <section id="faq" class="section section-dark reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">FAQ</span>
+        <h2>Частые вопросы</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Сколько занимает производство?</h3>
+          <p>Средний цикл — 10-20 рабочих дней в зависимости от сложности, материалов и согласований.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Вы берёте проекты по России?</h3>
+          <p>Да, работаем с партнёрами в регионах и организуем монтаж по всей стране.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Есть ли гарантия?</h3>
+          <p>Гарантия от 12 до 36 месяцев на конструктив и световые модули.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
